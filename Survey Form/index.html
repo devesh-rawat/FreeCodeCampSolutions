@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+    <header>
+    <h1 id="title">UTU Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+    </header>
+    <form action="submit" id="survey-form">
+        <div class="form-control">
+            <label id="name-label" for="name">Name</label>
+            <input type="text" required id="name" placeholder="Enter Your Name">
+        </div>
+
+
+        <div class="form-control">
+            <label id="email-label" for="email"  >Email</label>
+            <input type="email"  required id="email" placeholder="Enter Your Email ">
+        </div>
+        <div class="form-control">
+        <label id="number-label" for="number">age <span>(optional)</span></label>
+        <input type="number"  id="number" max="70" min="10" placeholder="age">
+        </div>
+
+        <div class="form-control">
+        <label for="dropdown">Select Your Branch.?</label>
+        <select name="selection" id="dropdown">
+            <option  id="opt1" disabled selected value>Select an option</option>
+            <option value="Bca" id="opt2">Bca</option>
+            <option value="Bcom" id="opt3">BCom</option>
+            <option value="Btech" id="opt4">BTech</option>
+        </select>
+        </div>
+        <div class="form-control">
+            <p>Would you like to take Admission.?</p>
+            <label for="r1">
+                <input value="r1" type="radio" name="choose" id="r1" checked>
+                Yes
+            </label>
+            <label for="r2">
+                <input value="r2"type="radio" name="choose" id="r2">
+                No
+            </label>
+        </div>
+        <div class="form-control">
+            <p>Select Skills you want.?</p>
+            <label for="c1">
+                <input type="checkbox" name="c1" id="c1" value="c1">
+                Web Development
+            </label>
+            <label for="c2">
+                <input value="c2" type="checkbox" name="c1" id="c2">
+                App Development
+            </label>
+            <label for="c3">
+                <input value="c3" type="checkbox" name="c1" id="c3">
+                System Development
+            </label>
+        </div>
+        <div class="form-control">
+            <p>Any Comments.?</p>
+            <textarea name="tarea" id="tarea" cols="30" rows="10" placeholder="Enter Your Comments here...."></textarea>
+        </div>
+        <div class="form-control">
+            <button id="submit" type="submit" action="http://192.168.242.240:3000/index.html" >Submit</button>
+        </div>
+    </form>
+    </div>
+</body>
+</html>
