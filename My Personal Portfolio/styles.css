@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: linear-gradient(45deg, rgb(118, 201, 255), rgb(247, 255, 222));
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: black;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+nav h1 {
+    font-size: 2rem;
+    color: white;
+    background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgoymhIAjPURfTGSJLnRBAZFsjSOxFmcFf9w&usqp=CAU);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+ul {
+    display: flex;
+    gap: 1rem;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: rgb(255, 0, 0);
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+a:hover {
+    color: red;
+    text-shadow: 1px 1px blue;
+}
+
+#welcome-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+#welcome-section h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+main {
+    padding: 2rem;
+}
+
+section {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: antiquewhite;
+}
+
+section h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+p {
+    font-size: 1rem;
+    color: blue;
+}
+
+.project-tile {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.images {
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+#Contact ul {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+#Contact a {
+    color: blue;
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #welcome-section h1 {
+        font-size: 2rem;
+    }
+
+    section h1 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 0.875rem;
+    }
+
+    .images {
+        height: 150px;
+        width: 150px;
+    }
+}
